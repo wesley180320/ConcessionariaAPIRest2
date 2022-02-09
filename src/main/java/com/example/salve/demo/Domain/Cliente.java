@@ -1,6 +1,5 @@
+
 package com.example.salve.demo.Domain;
-
-
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -1,6 +1,7 @@
 package com.example.salve.demo.Resources;
 
 import com.example.salve.demo.Domain.Carro;
+import com.example.salve.demo.Domain.Cliente;
 import com.example.salve.demo.Service.CarroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,7 +38,7 @@ public class CarroResource {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ResponseEntity<List<Carro>> findAll(@RequestBody Carro carro){
+    public ResponseEntity<List<Carro>> findAll(){
 
         List<Carro> obj = carroService.findAll();
 
